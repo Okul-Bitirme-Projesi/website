@@ -1,0 +1,17 @@
+buhafta:
+yönetim paneli yaptým
+repeater urun ve kategorilere eklendi
+veri tabaný baðlandý
+urun ekleme yerinde veritabanýna baðlandýp dll. hatasý verdi fakat images dosyasýna resimi ekliyor
+accsessdatasource eklenip  veritabanýna katagori eklenme özelliði verildi
+yönlendirme kodlarý eklendi 
+katagori dropdown ekledim 
+menu baþýnda uye ol ve giriþ kýsmý eklemeye çalýþtým olmadý
+urun resim ekleme kodlarýyla eklendi 
+baþkasýnýn sýzmamasý için session kodlarý ekledim fakat çalýþmadý 
+ Haftaya:
+Diðer kalan veritabanlarý baðlanýcak
+uye giriþi uye ol eklenicek (kodlarla)
+baþka birisinin sýzmamasý için session kodlarý eklenicek
+
+PROGRAMIMDA DOSYA EKSÝK OLDUÐUNDAN DOLAYI VERÝLER SADECE BU KADAR BAÐLAYA BÝLDÝM

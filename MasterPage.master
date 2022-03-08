@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <section id="banner">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                    <a class="navbar-brand" href="index.aspx"><img src="images/banner_logo.png" height="75px" /></a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item "><a class="nav-link" href="index.aspx">Anasayfa </a><span class="sr-only">(current)</span> </li>
+                            <li class="nav-item"><a class="nav-link" href="Ürünler.aspx">Ürünlerimiz</a> </li>
+                            <li class="nav-item"><a class="nav-link" href="İletisim.aspx">İletişim</a> </li>
+                            <li class="nav-item"><a class="nav-link" href="Bağıs.aspx">Bağış</a> </li>
+                            <li class="nav-item"><a class="nav-link" href="Giris.aspx">Üye Girişi</a> </li>
+                            <li class="nav-item"><a class="nav-link" href="uyeol.aspx">Üye ol</a> </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link show dropdown-toggle"data-toggle="dropdown" href="#">Kategoriler</a>
+                                <ul class="dropdown-menu">
+                                    <asp:Repeater ID="RptKategoriler" runat="server">
+                                        <ItemTemplate>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#"><%#Eval("KategoriAD")%></a>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <asp:AccessDataSource ID="adsKategori" runat="server" DataFile="~/App_Data/mehmetcik.accdb" SelectCommand="SELECT * FROM [Kategori]"></asp:AccessDataSource>
+                </nav>
+            </div>
+        </section>
+    
+    <section id="Slider">
+            <asp:ContentPlaceHolder ID="ContentSlider" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </section>
+    <section id="Firsat_URunleri">
+            <asp:ContentPlaceHolder ID="ContentÜrünler" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+    <section id="Tarihce">
+            <asp:ContentPlaceHolder ID="ContentTarihce" runat="server">
+            </asp:ContentPlaceHolder>
+            <section id="Vakıf">
+                <asp:ContentPlaceHolder ID="ContentVakıf" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <div class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container linkler">
+                    <p class="navbar-text fa-pull-left">Copyright &copy; By Design and Prgram Kaan 2018</p>
+                    <a class="btn btn-outline-primary  btn-sm fa-pull-right text-center" href="#"><i class="fab fa-facebook-square"></i>  Facebook</a>
+                    <a class="btn btn-outline-primary  btn-sm fa-pull-right text-center" href="#"><i class="fab fa-twitter-square"></i>  Twitter</a>
+                    <a class="btn btn-outline-primary  btn-sm fa-pull-right text-center" href="#"><i class="fab fa-instagram"></i>  İnstagram</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="js/fontawesome-all.js" type="text/javascript"></script>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
