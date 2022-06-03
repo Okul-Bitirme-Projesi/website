@@ -1,39 +1,38 @@
-*{
-	margin:0;
-	padding:0;
-	}
-#Slider{
-	margin-top:70px;
-	}
-#Tarihce p,h1{
-	color:#666;
-	}
-#vakıf p,h1{
-		color:#666;
-	}
-#Firsat_URunleri{
-	padding-top:20px;
-	
-	
-	}
-#Firsat_URunleri,h1{
-	padding-bottom:20px;
-	
-	}
-#Slider{
-	padding-top:100px;
+* {
+  margin: 0;
+  padding: 0;
 }
-.bagisResim{
-    margin-right:100px;
+#Slider {
+  margin-top: 70px;
+}
+#Tarihce p,
+h1 {
+  color: #666;
+}
+#vakıf p,
+h1 {
+  color: #666;
+}
+#Firsat_URunleri {
+  padding-top: 20px;
+}
+#Firsat_URunleri,
+h1 {
+  padding-bottom: 20px;
+}
+#Slider {
+  padding-top: 100px;
+}
+.bagisResim {
+  margin-right: 100px;
 }
 .bosluk img {
-   margin:0px auto;
-   max-width:80%;
+  margin: 0px auto;
+  max-width: 80%;
 }
 body {
-    background-image:url("../images/background-2561479_960_720.jpg");
-    
+  background-image: url("../images/background-2561479_960_720.jpg");
 }
-#uyelik{
-    margin-top:100px;
+#uyelik {
+  margin-top: 100px;
 }
